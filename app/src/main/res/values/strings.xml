@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Sprint final modulo 5</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="descripcion_producto">Descripcion producto</string>
+    <string name="_38">38</string>
+    <string name="_39">39</string>
+    <string name="_40">40</string>
+    <string name="_41">41</string>
+    <string name="size">Size:</string>
+    <string name="add_to_cart">Add to cart</string>
+    <string name="vaciar_carrito">Vaciar carrito</string>
+    <string name="eliminar_producto">Eliminar producto</string>
+    <string name="imagen_zapatilla">Imagen zapatilla</string>
+</resources>

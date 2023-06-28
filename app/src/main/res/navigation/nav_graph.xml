@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/itemProducts">
+
+    <fragment
+        android:id="@+id/itemProducts"
+        android:name="com.example.sprintfinalmodulo5.itemProducts"
+        android:label="fragment_item_products"
+        tools:layout="@layout/fragment_item_products" >
+        <action
+            android:id="@+id/action_itemProducts_to_itemSingleProduct"
+            app:destination="@id/itemSingleProduct" />
+        <action
+            android:id="@+id/action_itemProducts_to_cart"
+            app:destination="@id/cart" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/itemSingleProduct"
+        android:name="com.example.sprintfinalmodulo5.ItemSingleProduct"
+        android:label="fragment_item_single_product"
+        tools:layout="@layout/fragment_item_single_product" >
+        <argument
+            android:name="Name"
+            app:argType="string" />
+        <argument
+            android:name="Price"
+            app:argType="float" />
+        <argument
+            android:name="url"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_itemSingleProduct_to_cart"
+            app:destination="@id/cart"
+            />
+        <action
+            android:id="@+id/action_itemSingleProduct_to_itemProducts"
+            app:destination="@id/itemProducts"
+
+            />
+    </fragment>
+
+    <fragment
+        android:id="@+id/cart"
+        android:name="com.example.sprintfinalmodulo5.cart"
+        android:label="fragment_cart"
+        tools:layout="@layout/fragment_cart" >
+        <action
+            android:id="@+id/action_cart_to_itemProducts"
+            app:destination="@id/itemProducts" />
+    </fragment>
+</navigation>
